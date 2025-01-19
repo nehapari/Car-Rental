@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            height: 400px;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+
+        .section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .inventory {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .car {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 300px;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .car img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Car Dealership</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#inventory">Inventory</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Find Your Dream Car Today</h1>
+    </section>
+
+    <section class="section" id="inventory">
+        <h2>Car Inventory</h2>
+        <div class="inventory">
+            <div class="car">
+                <img src="https://via.placeholder.com/300x200" alt="Car 1">
+                <h3>Car Model 1</h3>
+                <p>Price: $20,000</p>
+                <p>Year: 2023</p>
+            </div>
+            <div class="car">
+                <img src="https://via.placeholder.com/300x200" alt="Car 2">
+                <h3>Car Model 2</h3>
+                <p>Price: $25,000</p>
+                <p>Year: 2023</p>
+            </div>
+            <div class="car">
+                <img src="https://via.placeholder.com/300x200" alt="Car 3">
+                <h3>Car Model 3</h3>
+                <p>Price: $30,000</p>
+                <p>Year: 2023</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Car Dealership. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
